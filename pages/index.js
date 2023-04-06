@@ -5,7 +5,6 @@ import styles from "@/styles/Home.module.css";
 export default function Home() {
   const inputRef = useRef();
   const [shortUrl, setShortUrl] = useState("");
-
   const [errorMsg, setErrorMsg] = useState("");
 
   const isValidUrl = (url) => {
@@ -49,31 +48,30 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <h1>Vinci URL Shortener</h1>
-        <p>Make Long URLs look nicer with Vinci URL Shortener.</p>
+      <main className={`${styles.main} ${styles.bgColor}`}>
+        <h1 className={styles.primaryColor}>Vinci URL Shortener</h1>
+        <p className={styles.textColor}>
+          Make Long URLs look nicer with Vinci URL Shortener.
+        </p>
         <form className={styles.form} onSubmit={handleSubmit}>
           <input
             ref={inputRef}
             type="text"
             placeholder="URL"
-            className={styles.input}
+            className={`${styles.input} ${styles.inputBorderColor} ${styles.borderRadius} ${styles.inputBgColor}`}
           />
-          <button type="submit" className={styles.button}>
+          <button
+            type="submit"
+            className={`${styles.button} ${styles.buttonBgColor} ${styles.buttonTextColor} ${styles.borderRadius}`}
+          >
             Shorten
           </button>
-          <span className={styles.input}>{shortUrl}</span>
-          {errorMsg && <p className={styles.error}>{errorMsg}</p>}
+          <span className={`${styles.input} ${styles.shortUrl}`}>
+            <a href={`https://localhost:3000/${shortUrl}`} target="_blank" rel="noreferrer">vinci-url.com/{shortUrl}</a>
+          </span>
+          {errorMsg && <p className={`${styles.error} ${styles.errorColor}`}>{errorMsg}</p>}
         </form>
       </main>
-      <style>{`
-      .error {
-        color: red;
-        font-size: 14px;
-        margin-top: 8px;
-      }
-      
-      `}</style>
     </>
   );
 }
