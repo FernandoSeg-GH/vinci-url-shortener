@@ -16,7 +16,7 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
+            <span className="sr-only">Vinci-URL</span>
             <img className="h-36 w-auto" src="/logos/png/logo-no-background.png" alt="" />
           </a>
         </div>
@@ -57,8 +57,8 @@ export default function Navbar() {
               <span className="sr-only">Your Company</span>
               <img
                 className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
+                src="/logos/png/favicon.png"
+                alt="URL Shortener"
               />
             </a>
             <a
@@ -89,14 +89,14 @@ export default function Navbar() {
                   </a>
                 ))}
               </div>
-              <div className="py-6">
+              {/* <div className="py-6">
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Log in
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </Dialog.Panel>

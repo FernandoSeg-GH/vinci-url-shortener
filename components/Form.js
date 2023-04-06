@@ -49,12 +49,12 @@ function Form() {
   return (
     <div className="flex flex-col justify-center py-12 sm:px-6 lg:px-8 pt-52">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-200">
-          Vinci URL Shortener
-        </h2>
-        <p className="mt-2 text-center text-sm text-gray-400">
-          Make Long URLs look nicer with Vinci URL Shortener.
-        </p>
+      <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-200">
+        Upgrade Your URLs with Vinci
+      </h2>
+      <p className="mt-2 text-center text-sm text-gray-400">
+        Shorten, customize, and track your links effortlessly, while enhancing user experience and trust.
+      </p>
       </div>
 
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
