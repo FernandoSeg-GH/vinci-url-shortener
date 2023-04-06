@@ -27,7 +27,7 @@ export default function Navbar() {
             </a>
           ))}
         </div>
-        <div className="flex flex-1 items-center justify-end gap-x-6">
+        {/* <div className="flex flex-1 items-center justify-end gap-x-6">
           <a href="#" className="hidden lg:block lg:text-sm lg:font-semibold lg:leading-6 lg:text-gray-100">
             Log in
           </a>
@@ -37,7 +37,7 @@ export default function Navbar() {
           >
             Sign up
           </a>
-        </div>
+        </div> */}
         <div className="flex lg:hidden">
           <button
             type="button"
